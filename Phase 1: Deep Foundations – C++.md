@@ -94,9 +94,13 @@ r = 30; // x أصبح 30
 
 الفرق العملي
 Feature	Pointer	Reference
+
 Null-able	✅	❌
+
 Reassignable	✅	❌
+
 Memory address	✅	✅
+
 Syntax	*p / &x	r فقط
 
 نصيحة: استخدم reference دائمًا إلا لو تحتاج pointer.
@@ -181,13 +185,16 @@ int* const p = &a; // p لا يمكن تغييره → لا يمكن إعادة 
 pointer to const
 
 const int* p = &a;
+
 *p = 30; // ❌ لا يمكن تعديل المحتوى
+
 p = &b;  // ✅ يمكن إعادة التعيين
 
 
 const reference
 
 const int& r = a;
+
 r = 30; // ❌ لا يمكن تعديل a من خلال r
 
 
