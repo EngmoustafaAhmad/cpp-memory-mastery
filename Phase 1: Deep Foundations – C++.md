@@ -92,7 +92,6 @@ int x = 10;
 int& r = x;
 r = 30; // x أصبح 30
 
-الفرق العملي
 Feature	Pointer	Reference
 
 Null-able	✅	❌
